@@ -148,8 +148,3 @@ data_frame = pd.DataFrame(list_of_lists)
 # adding column name to the respective columns
 data_frame.columns = columns
 pd.set_option('display.max_columns', None)
-print()
-print(data_frame.to_csv(index=False, sep="|"))
-
-# data_frame.sort_values(['Starttidspunkt', 'Sluttidspunkt'],
-#                        ascending=[True, True])
