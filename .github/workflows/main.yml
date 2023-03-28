@@ -10,20 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    # - name: Install pipenv
-    #   run: pipx install pipenv
+    - name: Install pipenv
+      run: pipx install pipenv
     - uses: actions/setup-python@v3
       with:
         python-version: '3.10'
-        # cache: 'pipenv'
-    # - run: pipenv install --python `which python`
-    - name: "Activate env"
-      run: source venv/bin/activate
-    - name: "Install requirements"
-      run: pip install -r requirements.txt
+        cache: 'pipenv'
+    - run: pipenv install --python `which python`
     - name: Run scraper 
-      # run: pipenv run python Scraper.py
-      run: python retslister.py
+      # run: pipenv run python retslister.py
+      run: pipenv run python retslister.py
     - name: Git status
       run: git status
     - name: Add and commit

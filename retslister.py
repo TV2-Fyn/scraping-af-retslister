@@ -11,7 +11,7 @@ header = {
 
 # request url
 
-url = "https://www.domstol.dk/svendborg/retslister/2023/2/civile-sager-uge-8/"
+url = "https://www.domstol.dk/svendborg/retslister/2023/3/civilesager-uge-12/"
 r = requests.get(url, headers=header)
 
 columns_and_regex = {
