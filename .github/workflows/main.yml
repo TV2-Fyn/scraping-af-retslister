@@ -21,7 +21,7 @@ jobs:
       run: pip install -r requirements.txt
     - name: Run scraper 
       # run: pipenv run python Scraper.py
-      run: python Scraper.py
+      run: python retslister.py
     - name: Git status
       run: git status
     - name: Add and commit
