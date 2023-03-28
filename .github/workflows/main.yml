@@ -17,6 +17,8 @@ jobs:
         python-version: '3.10'
         # cache: 'pipenv'
     # - run: pipenv install --python `which python`
+    - name: "Activate env"
+      run: source venv/bin/activate
     - name: "Install requirements"
       run: pip install -r requirements.txt
     - name: Run scraper 
